@@ -23,6 +23,7 @@ Automatically ignore certain selectable languages:
 - Run `./gradlew build`
 
 ## Installation
-- Make sure you have Meteor Client and Fabric API 1.21.4 installed.
-- Download the latest jar on the releases tab.
+*If you're sceptical I highly recommend building it from source*
+- Make sure you have Meteor Client and Fabric API installed.
+- Download the [latest release](https://github.com/azedeveloper/AutoIgnoreLanguage/releases/latest)
 - Put it in your `.minecraft/mods` folder.
