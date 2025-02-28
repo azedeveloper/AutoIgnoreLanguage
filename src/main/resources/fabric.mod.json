@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "autoignorelanguage",
+  "version": "${version}",
+  "name": "Auto Ignore Language",
+  "description": "Automatically ignore selected languages in chat.",
+  "authors": [
+    "azedev"
+  ],
+  "contact": {
+    "repo": "https://github.com/azedeveloper/AutoIgnoreTurk"
+  },
+  "icon": "assets/template/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "net.azedev.autoignorelanguage.AutoIgnoreLanguage"
+    ]
+  },
+  "custom": {
+    "meteor-client:color": "225,25,25"
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["${mc_version}"],
+    "meteor-client": "*"
+  }
+}
