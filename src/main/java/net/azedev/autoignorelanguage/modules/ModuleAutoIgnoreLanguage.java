@@ -105,6 +105,8 @@ public class ModuleAutoIgnoreLanguage extends Module {
         String username = messageText.substring(0, separatorIndex).trim();
         String chatMessage = messageText.substring(separatorIndex + 2).trim();
 
+        username = username.replaceAll("\\[.*?\\]", "").trim();
+
         if (chatMessage.length() < 5) return;
         Optional<LdLocale> detectedLanguage = detector.detect(chatMessage.toLowerCase()).toJavaUtil();
 
